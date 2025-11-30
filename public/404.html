@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oshan Chamara - Portfolio</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // This script handles client-side routing for React Router on GitHub Pages
+      var pathSegmentsToKeep = 1; // Keep '/portfolio' in the path
+      
+      var l = window.location;
+      var redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/portfolio/?/' + 
+                     l.pathname.slice(l.pathname.indexOf('/', 1) + 1).split('/').filter(function(segment) {
+                       return segment !== '';
+                     }).join('/') + (l.search || '') + (l.hash || '');
+      
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>

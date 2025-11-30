@@ -12,7 +12,7 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/portfolio">
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
