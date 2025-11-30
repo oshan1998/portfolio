@@ -19,7 +19,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              With 2+ year of experience as a Full-Stack Developer, I have independently handled end-to-end project 
+              With 1+ year of experience as a Full-Stack Developer, I have independently handled end-to-end project 
               development, including architecture design, server setup, deployments, and occasional client communication, 
               consistently delivering projects on time. I also have foundational knowledge in machine learning, having 
               completed my final-year project in this field, and gained industrial experience working with Large Language 
