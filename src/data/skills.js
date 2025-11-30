@@ -8,14 +8,14 @@ export const skills = {
     { name: 'Tailwind CSS', level: 'Advanced' },
     { name: 'MongoDB', level: 'Intermediate' },
     { name: 'REST APIs', level: 'Advanced' },
-    { name: 'Kafka', level: 'Intermediate' },
+    // { name: 'Kafka', level: 'Intermediate' },
     { name: 'RabbitMQ', level: 'Intermediate' },
     { name: 'Linux', level: 'Advanced' },
     { name: 'Docker', level: 'Intermediate' }
   ],
   embedded: [
     { name: 'Raspberry Pi', level: 'Advanced' },
-    { name: 'Sensors (MPU6050)', level: 'Advanced' },
+    { name: 'Digital and Analog Electronics', level: 'Advanced' },
     { name: 'Drone Flight Control', level: 'Intermediate' },
     { name: 'PID Control', level: 'Intermediate' },
     { name: 'C / C++', level: 'Intermediate' }
