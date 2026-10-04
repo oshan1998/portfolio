@@ -13,6 +13,8 @@ export const projects = [
     category: 'Agentic AI',
     date: 'Jun 2026 - Aug 2026',
     featured: true,
+    demoUrl: 'https://lnkd.in/p/g24BYse3',
+    demoPlatform: 'linkedin',
   },
   {
     id: 'agentx',
@@ -28,6 +30,8 @@ export const projects = [
     category: 'Agentic AI',
     date: 'May 2026',
     featured: true,
+    demoUrl: 'https://youtu.be/W7fxuxpZzaM',
+    demoPlatform: 'youtube',
   },
   {
     id: 1,

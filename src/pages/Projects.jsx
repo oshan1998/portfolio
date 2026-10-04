@@ -8,6 +8,23 @@ const categoryColors = {
   'Hardware Design': 'bg-amber-100 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300',
 }
 
+const demoPlatformMeta = {
+  youtube: {
+    label: 'Watch Demo',
+    className: 'text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 border-red-200 dark:border-red-500/20',
+    icon: (
+      <path d="M23.498 6.186a2.994 2.994 0 00-2.107-2.12C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.391.521A2.994 2.994 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.994 2.994 0 002.107 2.12c1.886.521 9.391.521 9.391.521s7.505 0 9.391-.521a2.994 2.994 0 002.107-2.12C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.546 15.568V8.432L15.818 12l-6.272 3.568z" />
+    ),
+  },
+  linkedin: {
+    label: 'Watch Demo',
+    className: 'text-blue-700 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 border-blue-200 dark:border-blue-500/20',
+    icon: (
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    ),
+  },
+}
+
 const ProjectCard = ({ project }) => {
   const badgeClass = categoryColors[project.category] || 'bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-gray-300'
 
@@ -48,7 +65,7 @@ const ProjectCard = ({ project }) => {
           </ul>
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-5">
           {project.tech.map((tech, index) => (
             <span
               key={index}
@@ -58,6 +75,23 @@ const ProjectCard = ({ project }) => {
             </span>
           ))}
         </div>
+
+        {project.demoUrl && (() => {
+          const demo = demoPlatformMeta[project.demoPlatform] || demoPlatformMeta.youtube
+          return (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold border transition-colors ${demo.className}`}
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                {demo.icon}
+              </svg>
+              {demo.label}
+            </a>
+          )
+        })()}
       </div>
     </div>
   )
