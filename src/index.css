@@ -3,14 +3,54 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+    @apply bg-white dark:bg-ink text-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans antialiased;
+    background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(99, 102, 241, 0.12), transparent);
+  }
+
+  .dark body {
+    background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(99, 102, 241, 0.16), transparent);
+  }
+
+  ::selection {
+    @apply bg-indigo-500/30 text-inherit;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-600;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-400 bg-200% animate-gradient-x;
+  }
+
+  .card-surface {
+    @apply bg-white dark:bg-ink-700/60 border border-gray-200 dark:border-white/10 backdrop-blur-sm;
+  }
+
+  .glow-ring {
+    @apply ring-1 ring-inset ring-gray-200 dark:ring-white/10;
+  }
+
+  .font-mono-label {
+    @apply font-mono text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400;
   }
 }
-

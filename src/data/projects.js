@@ -1,5 +1,35 @@
 export const projects = [
   {
+    id: 'axn',
+    title: 'AXN - Agent Workflow Graph Platform',
+    description: 'A graph-based agent workflow runtime built from scratch, enabling complex multi-agent systems to be composed and executed as reusable workflow graphs without relying on frameworks such as LangGraph or LangChain.',
+    features: [
+      'Configurable execution engine supporting node dependencies and context propagation',
+      'Parallel execution with retries, failure handling, and workflow state persistence',
+      'Agent networks implemented for ERPNext business process automation and AI content generation',
+      'Tested across multi-step autonomous workflows'
+    ],
+    tech: ['NestJS', 'MongoDB', 'MCP', 'Vertex AI'],
+    category: 'Agentic AI',
+    date: 'Jun 2026 - Aug 2026',
+    featured: true,
+  },
+  {
+    id: 'agentx',
+    title: 'AgentX - Hierarchical AI Agent Runtime',
+    description: 'A modular hierarchical AI agent runtime where a principal agent plans tasks and delegates work to isolated sub-agents.',
+    features: [
+      'Parallel DAG-based task orchestrator with sandboxed sessions and scoped tool permissions',
+      'Configurable iteration budgets for controlled autonomous execution',
+      'Pluggable skill/tool architecture with multi-provider LLM support (Gemini, OpenAI, Ollama)',
+      'Session and long-term memory, scheduling, and real-time WebSocket tracing'
+    ],
+    tech: ['Node.js', 'TypeScript', 'LLMs', 'Vertex AI'],
+    category: 'Agentic AI',
+    date: 'May 2026',
+    featured: true,
+  },
+  {
     id: 1,
     title: 'End to End Encrypted Chat Web Application',
     description: 'A secure real-time chat application with end-to-end encryption, supporting both private and group conversations.',
