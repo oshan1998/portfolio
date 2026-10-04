@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3">
             <a
-              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              href={`${import.meta.env.BASE_URL}Oshan_Chamara_CV.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:opacity-90 transition-opacity"
@@ -94,7 +94,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                href={`${import.meta.env.BASE_URL}Oshan_Chamara_CV.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}

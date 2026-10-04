@@ -79,8 +79,6 @@ const About = () => {
                 <span className="font-mono text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">Jan 2020 - Jun 2024</span>
               </div>
               <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 text-sm">
-                <li>Semester 1, 6, 8 Dean's list</li>
-                <li>GPA: 3.41</li>
                 <li>Second Class Upper Division</li>
               </ul>
             </div>

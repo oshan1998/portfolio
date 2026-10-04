@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 const stats = [
   { value: '2+', label: 'Years of Experience' },
-  { value: '6+', label: 'Production Services Shipped' },
-  { value: '1', label: 'Live App Owned End-to-End' },
+  { value: 'Full-Stack', label: 'Engineering' },
+  { value: 'Agentic AI', label: 'Focus' },
 ]
 
 const focusAreas = [
